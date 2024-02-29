@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Main = () => {
+export const Main = ({children}) => {
   return (
     <>
-    
+    <main>{children}</main>
     </>
   )
 }

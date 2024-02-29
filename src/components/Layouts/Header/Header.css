@@ -17,12 +17,17 @@ li{
 
     
 }
-h1{
+header h1{
     font-size: 3rem;
     text-align: center;
+    color: #FFFF;
+    margin-bottom: 0%;
 }
 
-header h1{
-    text-decoration: underline;
-    color: #FFFF;
+
+hr{
+    border-radius: 10rem 10rem 10rem 10rem;
+    height: 0.6rem;
+    width: 31rem;
+    background-color: aliceblue;
 }

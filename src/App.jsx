@@ -1,15 +1,37 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 
-import { Home } from './components/Pages/Home/Home'
+import { PictureProfile } from './components/PictureProfile/PictureProfile'
+import { Header } from './components/Layouts/Header/Header'
+import { Navbar } from './components/NavBar/NavBar'
+import { Items } from './components/items/items'
+import { LogoAndMedias } from './components/LogoAndMedias/LogoAndMedias'
+import { Main } from './components/Layouts/Main/Main'
+import { Perfil } from './components/Perfil/Perfil'
+
 
 function App() {
  
 
   return (
     <>
-      <Home/>
+    <Header>
+    <PictureProfile/>
+    <h1>
+        JUAN PABLO GARCÍA 
+    </h1>
+    <hr />
+    <Navbar>
+    <Items content="Inicio"  />
+        <Items content="About me" />
+        <Items content="Proyects" />
+        <Items content="Contacts"/>
+        <Items content="References"/>
+    </Navbar>
+    <LogoAndMedias/>
+    </Header>
+    <Main>
+    <Perfil/>
+    </Main>
     </>
   )
 }
