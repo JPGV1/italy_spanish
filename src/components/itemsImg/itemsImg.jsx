@@ -1,4 +1,5 @@
 import React from 'react'
-
-export const PictureProfile = () => <img className='Picture' src={pictureProfile} alt=''/>
-export const Item2 = () => <img><a href=''>{}</a></img>
+import  pictureProfile  from "../../assets/logosena.png";
+import './itemsimg.css'
+export const LogoSenaNav = () => <img id='PictureNav' src={pictureProfile} alt='LogoSenaNav'/>
+export const LogoSenaMain = () => <img id='PictureMain' src={pictureProfile} alt='LogoSenaMain'/>
