@@ -1,0 +1,28 @@
+
+Header{
+    background-color: #39a900;
+    margin-bottom: 1rem;
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+li{
+    display: flex;
+    font-size: 2rem;
+    list-style: none;
+    justify-content: center;
+
+    
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+header h1{
+    text-decoration: underline;
+    color: #FFFF;
+}
