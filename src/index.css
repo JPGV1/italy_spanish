@@ -23,7 +23,7 @@ a:hover {
   ;
 }
 div#root{
-  height: 100vh;
+  height: 100%;
   display: flex;
 }
 body {
