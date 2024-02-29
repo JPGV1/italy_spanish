@@ -11,23 +11,23 @@ Header{
 }
 li{
     display: flex;
-    font-size: 2rem;
+    font-size: 1.7rem;
     list-style: none;
     justify-content: center;
 
     
 }
 header h1{
-    font-size: 3rem;
+    font-size: 1.7rem;
     text-align: center;
     color: #FFFF;
     margin-bottom: 0%;
 }
 
 
-hr{
+header hr{
     border-radius: 10rem 10rem 10rem 10rem;
-    height: 0.6rem;
-    width: 31rem;
+    height: 0.2rem;
+    width: 18rem;
     background-color: aliceblue;
 }
