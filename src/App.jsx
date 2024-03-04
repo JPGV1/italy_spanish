@@ -41,7 +41,7 @@ const projects = [
   },
   {
     title: "Proyecto 4",
-    description: "En proceso",
+    description: "Portafolio usando React",
     imageUrl: proyect4,
     buttonUrl: "https://portafolio-react-flame-alpha.vercel.app/"
   }
