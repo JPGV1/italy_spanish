@@ -1,0 +1,23 @@
+.reference-box {
+    width: 28%;
+    color: rgb(0, 0, 0);
+    border: 5px solid #535252;
+    border-radius: 4px;
+    padding: 0.7rem;
+    margin: 0.5rem 0 0.4rem 0.4rem; 
+  }
+  
+  .reference-box h3 {
+    margin-top: 0;
+  }
+  
+  .reference-box p {
+    margin: 5px 0;
+  }
+  
+  .reference-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  

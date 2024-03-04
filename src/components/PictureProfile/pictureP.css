@@ -1,9 +1,9 @@
 .Picture{
     
         border-radius: 20rem 20rem 20rem 20rem;
-        border:double  4px #fff;
-        width: 16rem;
-        height: 16rem;
+       
+        width: 10rem;
+        height: 10rem;
         background: no-repeat;
-        margin: 2rem 0 1rem 1rem;
+        margin: 1rem 0 0.5rem 1rem;
     }

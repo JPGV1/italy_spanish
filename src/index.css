@@ -15,28 +15,72 @@
 
 a {
   font-weight: 500;
-  color:  #c1ff95;
+  color: #c1ff95;
   text-decoration: inherit;
+  cursor: pointer;
 }
+
 a:hover {
-  color: #ffffff
-  ;
+  color: #ffffff;
 }
-div#root{
+
+div#root {
   height: 100vh;
   display: flex;
 }
+
 body {
   margin: 0;
-  
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+ 
 
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+main {
+  margin-left: 20%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#SectionTxt {
+  color: #3d3d3d;
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 1.2rem 1rem 0 0;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Espacio entre las cards */
+}
+.card{
+  width: 45%;
+}
+.reference-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.language-container {
+  display: flex;
+  /* Mostrar elementos en fila */
+  justify-content: space-evenly;
+  /* Distribuir elementos equitativamente */
+  flex-wrap: wrap;
+  /* Permitir envolver elementos en filas adicionales */
 }
 
 button {
@@ -50,23 +94,362 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media (max-width: 1280px) {
+  header .Picture {
+    width: 11rem;
+    height: 11rem;
+    margin: 4rem 0 3rem 0;
   }
-  a:hover {
-    color: #747bff;
+
+  header li {
+    margin: 0.2rem;
+    font-size: 1.6rem;
   }
-  button {
-    background-color: #f9f9f9;
+
+  header h1 {
+    font-size: 1.1rem;
+
+  }
+
+  header hr {
+    width: 11.2rem;
+    margin: 0 0 1.5rem;
+  }
+
+  header #PictureNav {
+    margin: 2rem 0 3rem 0;
+    width: 12rem;
+    height: 12rem;
+  }
+
+  header svg {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  header #Medias {
+    padding: 0.6rem 1.2rem 0.5rem 1.2rem;
+  }
+
+  #SectionTxt {
+    font-size: 1rem;
+  }
+
+  .imgProyect {
+    width: 10rem;
+    height: 80%;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-description {
+    font-size: 1rem;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .reference-box {
+    width: 40%;
+  }
+
+  .reference-box h3 {
+    font-size: 1.4rem;
+  }
+
+  .reference-container {
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (max-width:920px) {
+  header {
+    height: 100%;
+  }
+
+  header .Picture {
+    margin: 1rem 0 1rem 0;
+    width: 9rem;
+    height: 9rem;
+  }
+
+  header li {
+    margin-top: 0.01rem;
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 1rem;
+
+  }
+
+  header hr {
+    height: .3rem;
+    width: 10.1rem;
+    margin: 0 0 0.5rem;
+  }
+#NavList{
+  margin-top: 0.2rem;
+}
+  header #PictureNav {
+    margin: 0.6rem 0 1rem 0;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  header svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  header #Medias {
+    padding: 0.4rem 1rem 0.4rem 1rem;
+  }
+
+  #Title {
+    margin: 1.2rem 0 0 2rem;
+    font-size: 2rem;
+  }
+
+  #SectionTxt {
+    font-size: 0.8rem;
+  }
+
+  .imgProyect {
+    width: 9rem;
+    height: 80%;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-description {
+    font-size: 0.7rem;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .reference-box {
+    width: 50%;
+  }
+
+  .reference-box h3 {
+    font-size: 1rem;
+  }
+
+  .reference-box p {
+    font-size: 0.9rem;
+  }
+
+  #Content {
+    width: 90%;
+  }
+
+  .language-logo {
+    width: 8rem;
+    height: 8rem;
+  }
+
+}
+@media (max-width:768px){
+header{
+  width: 32vw;
+}
+  header .Picture {
+    margin: 2rem 0 2rem 0;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  header li {
+    margin-top: 0.01rem;
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 0.8rem;
+
+  }
+
+  header hr {
+    height: .2rem;
+    width: 8rem;
+    margin: 0 0 1rem;
+  }
+#NavList{
+  margin-top: 0.9rem;
+}
+  header #PictureNav {
+    margin: 1.5rem 0 1.5rem 0;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  header svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  header #Medias {
+    padding: 0.4rem 1rem 0.4rem 1rem;
+  }
+
+  #Title {
+    margin: 1.2rem 0 0 1rem;
+    font-size: 1.8rem;
+  }
+
+  #SectionTxt {
+    font-size: 0.8rem;
+  }
+
+  .imgProyect {
+    width: 9rem;
+    height: 80%;
+  }
+
+  .card-title {
+    font-size: 0.6rem;
+  }
+  .card-button{
+    font-size: 0.6rem;
+  }
+  .card-description {
+    font-size: 0.7rem;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .reference-box {
+    width: 80%;
+  }
+
+  .reference-box h3 {
+    font-size: 1rem;
+  }
+
+  .reference-box p {
+    font-size: 0.9rem;
+  }
+
+  #Content {
+    width: 90%;
+  }
+
+  .language-logo {
+    width: 8rem;
+    height: 8rem;
   }
 }
+@media (max-width:480px){
+  header{
+    width: 40vw;
+  }
+    header .Picture {
+      margin: 3rem 0 3rem 0;
+      width: 8.2rem;
+      height: 8.2rem;
+    }
+  
+    header li {
+      margin-top: 0.01rem;
+      font-size: 1rem;
+    }
+  
+    header h1 {
+      font-size: 0.7rem;
+  
+    }
+  
+    header hr {
+      height: .2rem;
+      width: 8rem;
+      margin: 0 0 1rem;
+    }
+  #NavList{
+    margin-top: 1.5rem;
+  }
+    header #PictureNav {
+      margin: 2rem 0 2rem 0;
+      width: 8.5rem;
+      height: 8.5rem;
+    }
+  
+    header svg {
+      margin-left: 1.2rem;
+      width: 1.5rem;
+      height: 1rem;
+    }
+  
+    header #Medias {
+      margin: 2rem 0 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.4rem 0rem 0.4rem 0rem;
+    }
+  
+    #Title {
+      margin: 1.2rem 0 0 1rem;
+      font-size: 1.2rem;
+    }
+    #PictureNavis{
+      width: 3rem;
+      height: 3rem;
+    }
+    #hrMain{
+      height: 0.5rem;
+    }
+  
+    #SectionTxt {
+      font-size: 0.8rem;
+    }
+  
+    .imgProyect {
+      width: 5rem;
+      height: 80%;
+    }
+
+    .reference-box {
+      width: 100%;
+    }
+  
+    #Content {
+      width: 90%;
+    }
+  
+    .language-logo {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+
+
+/*
+*/

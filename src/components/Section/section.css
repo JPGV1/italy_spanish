@@ -1,0 +1,44 @@
+#PictureNavis {
+    padding: 0.3rem ;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 16rem 16rem 16rem 16rem;
+    background-color: #c1ff95;
+    margin: 0.5rem 0 1rem 0;
+}
+
+#Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2rem 0 0 10rem
+}
+
+#TwoElements {
+    
+    display: flex;
+}
+
+#hrMain {
+    margin-top: 0;
+    height: 0.8rem;
+    display: flex;
+    align-self: flex-start;
+    width: 98%;
+    border-radius: 2rem 2rem 2rem 2rem;
+    background-color: #c1ff95;
+
+    border: none;
+}
+
+#Title {
+    margin: 0.1rem 0 0 2rem;
+    font-size: 3rem;
+    color: #3d3d3d;
+}
+
+
+#ContentContainer{
+    width: 60vw;
+}

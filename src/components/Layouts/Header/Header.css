@@ -1,9 +1,10 @@
 
 Header{
+    position: fixed;
     background-color: #39a900;
     margin-bottom: 1rem;
     width: 25vw;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -11,14 +12,14 @@ Header{
 }
 li{
     display: flex;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     list-style: none;
     justify-content: center;
 
     
 }
 header h1{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     text-align: center;
     color: #FFFF;
     margin-bottom: 0%;
@@ -27,7 +28,7 @@ header h1{
 
 header hr{
     border-radius: 10rem 10rem 10rem 10rem;
-    height: 0.2rem;
-    width: 18rem;
+    height: 0.3rem;
+    width: 16rem;
     background-color: aliceblue;
 }
