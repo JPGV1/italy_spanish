@@ -41,9 +41,9 @@ const projects = [
   },
   {
     title: "Proyecto 4",
-    description: "Portafolio usando React",
+    description: "Bot basico que sube evidencias.",
     imageUrl: proyect4,
-    buttonUrl: "https://portafolio-react-flame-alpha.vercel.app/"
+    buttonUrl: "https://github.com/JPGV1/bot.git"
   }
 ];
 
