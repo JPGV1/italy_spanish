@@ -1,8 +1,8 @@
 
   .card {
 
-    width: 100%;
-    background-color: #39a900;
+    width: max-content;
+    background-color: #884A39;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -11,9 +11,9 @@
     overflow: hidden;
   }
   .imgProyect{
-    margin: 1rem 1rem 1rem 1rem;
-    width: 9rem;
-     height: 80%;
+    margin: 2rem 1rem 1rem 1rem;
+    width: 16rem;
+     height: 100%;
         object-fit: cover;
       
   }
@@ -39,13 +39,14 @@
  
   
   .card-button {
-    background-color: #39a900;
+    background-color: #C38154;
     color: #000000;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
+    border-radius: 20rem 20rem 20rem 20rem;
   }
   .card-button:hover{
     color: #000000;

@@ -1,7 +1,7 @@
 
 Header{
     position: fixed;
-    background-color: #39a900;
+    background-color: #884A39;
     margin-bottom: 1rem;
     width: 25vw;
     height: 100vh;
@@ -27,8 +27,9 @@ header h1{
 
 
 header hr{
+    border: none;
     border-radius: 10rem 10rem 10rem 10rem;
     height: 0.3rem;
     width: 16rem;
-    background-color: aliceblue;
+    background-color: #C38154;
 }

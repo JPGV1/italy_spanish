@@ -1,25 +1,26 @@
-import { useState } from 'react'
+import proyect1 from '../../../assets/rome.jpg'
+import proyect2 from '../../../assets/venice.jpeg'
+import proyect3 from '../../../assets/naples.png'
+import proyect4 from '../../../assets/florence.jpg'
+import { Link } from 'react-router-dom';
 
-import { PictureProfile } from './components/PictureProfile/PictureProfile'
-import { Header } from './components/Layouts/Header/Header'
-import { Navbar } from './components/NavBar/NavBar'
-import { Items } from './components/items/items'
-import { LogoAndMedias } from './components/LogoAndMedias/LogoAndMedias'
-import { Main } from './components/Layouts/Main/Main'
-import { Section } from './components/Section/Section'
-import ProyectCards from './components/ProyectCards/ProyectCards'
-import proyect1 from './assets/rome.jpg'
-import proyect2 from './assets/venice.jpeg'
-import proyect3 from './assets/naples.png'
-import proyect4 from './assets/florence.jpg'
-import ReferenceBox from './components/ReferenceBox/ReferenceBox'
-import ExperienceBox from './components/ExperienceBox/ExperienceBox'
-import logoJava from './assets/roma.jpeg'
-import logoJS from './assets/pizza.jpg'
-import logoReact from './assets/venecia.jpeg'
-import logoSQL from './assets/florencia.jpg'
-import logoMongo from './assets/pompeii.jpg'
-import logoNode from './assets/coast.jpeg'
+
+import logoJava from '../../../assets/roma.jpeg'
+import logoJS from '../../../assets/pizza.jpg'
+import logoReact from '../../../assets/venecia.jpeg'
+import logoSQL from '../../../assets/florencia.jpg'
+import logoMongo from '../../../assets/pompeii.jpg'
+import logoNode from '../../../assets/coast.jpeg'
+import { PictureProfile } from '../../PictureProfile/PictureProfile'
+import { Header } from '../../Layouts/Header/Header'
+import { Navbar } from '../../NavBar/NavBar'
+import { Items } from '../../items/items'
+import { LogoAndMedias } from '../../LogoAndMedias/LogoAndMedias'
+import { Main } from '../../Layouts/Main/Main'
+import { Section } from '../../Section/Section'
+import ProyectCards from '../../ProyectCards/ProyectCards'
+import ReferenceBox from '../../ReferenceBox/ReferenceBox'
+import ExperienceBox from '../../ExperienceBox/ExperienceBox'
 
 const projects = [
   {
@@ -49,12 +50,10 @@ const projects = [
 ];
 
 
-function App() {
-
-
+export const English = () => {
   return (
     <>
-      <Header>
+    <Header>
         <PictureProfile />
         <h1>
           ITALY
@@ -67,7 +66,14 @@ function App() {
           <Items content="PAGE" />
         </Navbar>
         <LogoAndMedias />
-        <button id='Translate'a href=''>Spanish</button>
+        <ul>
+          <li>
+            <Link to="/english">English</Link>
+          </li>
+          <li>
+            <Link to="/spanish">Spanish</Link>
+          </li>
+        </ul>
       </Header>
       <Main>
         <Section id='Profile' contentTitle='Introduction' >
@@ -143,8 +149,7 @@ function App() {
 
         </Section>
       </Main>
+    
     </>
   )
 }
-
-export default App

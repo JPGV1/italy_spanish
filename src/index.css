@@ -5,14 +5,16 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #ffffff;
+  background-color: #F9E0BB;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+#Translate{
+  background-color: #C38154;
+}
 a {
   font-weight: 500;
   color: #c1ff95;
@@ -58,19 +60,20 @@ main {
 }
 
 .card-container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
   /* Espacio entre las cards */
 }
 .card{
-  width: 45%;
+  width: 100%;
 }
 .reference-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
