@@ -54,95 +54,81 @@ function App() {
 
   return (
     <>
-      <Header>
-        <PictureProfile />
-        <h1>
-          ITALY
-        </h1>
-        <hr />
-        <Navbar>
-          <Items content="WELCOME" />
-          <Items content="TO" />
-          <Items content="MY" />
-          <Items content="PAGE" />
-        </Navbar>
-        <LogoAndMedias />
-        <button id='Translate'a href=''>Spanish</button>
-      </Header>
-      <Main>
-        <Section id='Profile' contentTitle='Introduction' >
-          <p id='SectionTxt'>
+    <Header>
+      <PictureProfile />
+      <h1>
+        ITALIA
+      </h1>
+      <hr />
+      <Navbar>
+        <Items content="BIENVENIDO" />
+        <Items content="A" />
+        <Items content="MI" />
+        <Items content="PÁGINA" />
+      </Navbar>
+      <LogoAndMedias />
+      <button id='Translate' a href='https://italy-english.vercel.app/'>English</button>
+    </Header>
+    <Main>
+      <Section id='Profile' contentTitle='Introducción' >
+        <p id='SectionTxt'>
+          Italia es un país lleno de historia, arte, gastronomía y paisajes impresionantes que atraen a millones de turistas cada año. Desde las antiguas ruinas romanas hasta la deliciosa comida y la moda de alta costura, Italia ofrece una experiencia única que no te puedes perder. ¡Ven y descubre la belleza y el encanto de Italia por ti mismo!
+        </p>
+      </Section>
 
-            Italy is a country filled with history, art, gastronomy, and stunning landscapes that attract millions of tourists every year. From ancient Roman ruins to delicious food and high fashion, Italy offers a unique experience that you can't miss. Come and discover the beauty and charm of Italy for yourself!
+      <Section id='Proyects' contentTitle='Ciudades Famosas'>
+        <div className="card-container">
+          {projects.map((project, index) => (
+            <ProyectCards key={index} project={project} />
+          ))}
+        </div>
+      </Section>
+      <Section id='References' contentTitle='Actividades y Experiencias'>
+        <div className="reference-container">
+          <ReferenceBox
+            name="Tours Gastronómicos y Clases de Cocina"
+            position="La comida es una parte fundamental de la cultura del país. Participar en tours gastronómicos o clases de cocina te permitirá experimentar y comprender mejor la rica tradición culinaria de Italia."
+          />
+          <ReferenceBox
+            name="Visitas a Sitios Históricos"
+            position="Italia está llena de increíbles sitios históricos que son esenciales para comprender su rica historia, como el Coliseo en Roma, el Foro Romano, la Basílica de San Pedro en el Vaticano y los sitios arqueológicos de Pompeya y Herculano."
+          />
+          <ReferenceBox
+            name="Paseo en Góndola en Venecia"
+            position="Este icónico paseo por los canales de Venecia es una experiencia única que te permite sumergirte en la belleza y la atmósfera romántica de esta ciudad sobre el agua."
+          />
+        </div>
+      </Section>
 
-          </p>
-        </Section>
-
-        <Section id='Proyects' contentTitle='Famous Cities'>
-          <div className="card-container">
-            {projects.map((project, index) => (
-              <ProyectCards key={index} project={project} />
-            ))}
-          </div>
-        </Section>
-        <Section id='References' contentTitle='Activities and Experiences'>
-          <div className="reference-container">
-            <ReferenceBox
-              name="Gastronomic Tours and Cooking Classes"
-              position=" food is a fundamental part of the country's culture. Participating in gastronomic tours or cooking classes will allow you to experience and better understand Italy's rich culinary tradition."
-              
-            />
-            <ReferenceBox
-              name="Visits to Historical Sites"
-              position="Italy is full of incredible historical sites that are essential for understanding its rich history, such as the Colosseum in Rome, the Roman Forum, St. Peter's Basilica in the Vatican, and the archaeological sites of Pompeii and Herculaneum."
-             
-            />
-            <ReferenceBox
-              name="Gondola Ride in Venice"
-              position="This iconic ride through the canals of Venice is a unique experience that allows you to immerse yourself in the beauty and romantic atmosphere of this city on the water."
-            
-            />
-          </div>
-        </Section>
-
-        <Section id='Experience' contentTitle='Touristic Places'>
-          <div className="language-container">
-            <ExperienceBox
-              logo={logoJava}
-              name="Colosseum (Colosseo) - Rome"
-              
-            />
-            <ExperienceBox
-              logo={logoReact}
-              name="Venice Canals (Venice)"
-            
-            />
-            <ExperienceBox
-              logo={logoSQL}
-              name="Florence Cathedral (Duomo) - Florence"
-             
-            />
-            <ExperienceBox
-              logo={logoJS}
-              name="Leaning Tower of Pisa"
-             
-            />
-            <ExperienceBox
-              logo={logoMongo}
-              name="Pompeii"
-              
-            />
-            <ExperienceBox
-              logo={logoNode}
-              name="Amalfi Coast"
-             
-            />
-
-
-          </div>
-
-        </Section>
-      </Main>
+      <Section id='Experience' contentTitle='Lugares Turísticos'>
+        <div className="language-container">
+          <ExperienceBox
+            logo={logoJava}
+            name="Coliseo (Colosseo) - Roma"
+          />
+          <ExperienceBox
+            logo={logoReact}
+            name="Canales de Venecia (Venecia)"
+          />
+          <ExperienceBox
+            logo={logoSQL}
+            name="Catedral de Florencia (Duomo) - Florencia"
+          />
+          <ExperienceBox
+            logo={logoJS}
+            name="Torre Inclinada de Pisa"
+          />
+          <ExperienceBox
+            logo={logoMongo}
+            name="Pompeya"
+          />
+          <ExperienceBox
+            logo={logoNode}
+            name="Costa Amalfitana"
+          />
+        </div>
+      </Section>
+    </Main>
     </>
   )
 }

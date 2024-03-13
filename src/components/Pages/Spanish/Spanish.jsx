@@ -39,14 +39,7 @@ export const Spanish = () => {
         <Items content="PÁGINA" />
       </Navbar>
       <LogoAndMedias />
-      <ul>
-          <li>
-            <Link to="/english">English</Link>
-          </li>
-          <li>
-            <Link to="/spanish">Spanish</Link>
-          </li>
-        </ul>
+      <button id='Translate' a href='https://italy-english.vercel.app/'>English</button>
     </Header>
     <Main>
       <Section id='Profile' contentTitle='Introducción' >
