@@ -23,26 +23,26 @@ import logoNode from './assets/coast.jpeg'
 
 const projects = [
   {
-    title: "Rome ",
-    description: "The capital city is famous for its ancient ruins such as the Colosseum, Roman Forum, and Pantheon, as well as the Vatican City, home to St. Peter's Basilica and the Vatican Museums.",
+    title: "Roma ",
+    description: "La ciudad capital es famosa por sus ruinas antiguas como el Coliseo, el Foro Romano y el Panteón, así como por la Ciudad del Vaticano, hogar de la Basílica de San Pedro y los Museos Vaticanos.",
     imageUrl: proyect1,
     buttonUrl: " https://es.wikipedia.org/wiki/Roma"
   },
   {
-    title: "Venice",
-    description: "Known for its picturesque canals, Venice is a unique city built on a series of islands. Visitors come to see landmarks like St. Mark's Basilica, the Doge's Palace, and to take a gondola ride along the canals.",
+    title: "Venecia",
+    description: "Conocida por sus pintorescos canales, Venecia es una ciudad única construida sobre una serie de islas. Los visitantes vienen a ver lugares emblemáticos como la Basílica de San Marcos, el Palacio Ducal y para dar un paseo en góndola por los canales.",
     imageUrl: proyect2,
     buttonUrl: " https://es.wikipedia.org/wiki/Venecia"
   },
   {
-    title: "Naples",
-    description: "Known for its rich history, art, and vibrant street life, Naples is also a gateway to the nearby ruins of Pompeii and Herculaneum, as well as the stunning Amalfi Coast.",
+    title: "Nápoles",
+    description: "Conocida por su rica historia, arte y vibrante vida callejera, Nápoles también es una puerta de entrada a las cercanas ruinas de Pompeya y Herculano, así como a la impresionante Costa Amalfitana.",
     imageUrl: proyect3,
     buttonUrl: "https://es.wikipedia.org/wiki/N%C3%A1poles"
   },
   {
-    title: "Florence",
-    description: "This city is renowned for its Renaissance art and architecture, including masterpieces like Michelangelo's David and Brunelleschi's Dome. The Uffizi Gallery and the Pitti Palace are also popular attractions.",
+    title: "Florencia",
+    description: "Esta ciudad es famosa por su arte y arquitectura renacentistas, incluyendo obras maestras como el David de Miguel Ángel y la cúpula de Brunelleschi. La Galería Uffizi y el Palacio Pitti también son atracciones populares.",
     imageUrl: proyect4,
     buttonUrl: "https://es.wikipedia.org/wiki/Florencia"
   }
